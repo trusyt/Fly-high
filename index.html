@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>AI Side Hustle Reality — Truth No One Tells You | Start Earning with AI</title>
+  <meta name="description" content="Discover the real truth about AI side hustles. No fake guru promises - just proven methods to start earning with AI. Get instant access for ₹109.">
+  <link rel="canonical" href="https://example.com/ai-side-hustle-reality">
+  <meta property="og:title" content="AI Side Hustle Reality — Truth No One Tells You">
+  <meta property="og:description" content="Discover the real truth about AI side hustles. No fake guru promises - just proven methods to start earning with AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/ai-side-hustle-reality">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Side Hustle Reality — Truth No One Tells You">
+  <meta name="twitter:description" content="Discover the real truth about AI side hustles. No fake guru promises - just proven methods to start earning with AI.">
+  <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
+  <!-- Load Tailwind first (with plugins) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <!-- Tailwind configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dark-primary': '#0D0D0D',
+            'dark-secondary': '#1A1A1A',
+            'accent-gold': '#FFD700',
+            'accent-blue': '#00C2FF'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Load Lucide icons (deferred) -->
+  <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Custom styles must be AFTER Tailwind -->
+  <style>
+    body { font-family: Inter, sans-serif; }
+  </style>
+
+  <!-- Initialize lucide icons after DOM is ready -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.lucide && typeof window.lucide.createIcons === 'function') {
+        window.lucide.createIcons();
+      }
+    });
+  </script>
+</head>
+<body class="bg-dark-primary text-white font-bold">
+  <header class="bg-dark-secondary border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <div class="text-xl font-bold text-accent-gold">
+            S_DRIVAN
+          </div>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#features" class="text-gray-300 hover:text-accent-blue transition-colors">Features</a>
+          <a href="#earning" class="text-gray-300 hover:text-accent-blue transition-colors">Earning Potential</a>
+          <a href="#pricing" class="text-gray-300 hover:text-accent-blue transition-colors">Pricing</a>
+          <a href="#faq" class="text-gray-300 hover:text-accent-blue transition-colors">FAQ</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+          <button id="buyNowBtn" class="bg-accent-gold text-dark-primary px-6 py-2 rounded-lg font-bold hover:bg-yellow-400 transition-colors">
+            Buy Now
+          </button>
+          <button id="mobileMenuBtn" class="md:hidden text-white">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Buy Now Popup -->
+  <div id="buyNowPopup" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-dark-secondary rounded-2xl p-8 max-w-md w-full border border-gray-700 relative">
+      <button id="closePopup" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <div class="text-center">
+        <h3 class="text-2xl font-bold text-accent-gold mb-4">Get Instant Access</h3>
+        <div class="text-4xl font-black text-accent-gold mb-2">₹109</div>
+        <div class="text-gray-400 line-through mb-4">₹249</div>
+        <div class="space-y-3 mb-6 text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-5 h-5 rounded-full bg-accent-gold flex items-center justify-center">
+              <i data-lucide="check" class="w-3 h-3 text-black"></i>
+            </div>
+            <span class="text-gray-300">Full AI Side Hustle Guide</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-5 h-5 rounded-full bg-accent-gold flex items-center justify-center">
+              <i data-lucide="check" class="w-3 h-3 text-black"></i>
+            </div>
+            <span class="text-gray-300">Automation Tips & Templates</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-5 h-5 rounded-full bg-accent-gold flex items-center justify-center">
+              <i data-lucide="check" class="w-3 h-3 text-black"></i>
+            </div>
+            <span class="text-gray-300">Lifetime Access</span>
+          </div>
+        </div>
+        <button id="completePurchase" class="w-full bg-gradient-to-r from-accent-gold to-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:shadow-lg transition-all">
+          Complete Purchase
+        </button>
+        <div class="text-xs text-gray-400 mt-3">Instant digital delivery • 30-day guarantee</div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="relative min-h-screen bg-gradient-to-br from-[#0D0D0D] via-[#1A1A1A] to-[#0D0D0D] text-white overflow-hidden"><div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23FFD700" fill-opacity="0.03"%3E%3Ccircle cx="30" cy="30" r="1"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div><div class="relative z-10 container mx-auto px-4 py-20 lg:py-32"><div class="grid lg:grid-cols-2 gap-12 items-center"><div class="space-y-8"><div class="inline-flex items-center px-4 py-2 bg-[#FFD700]/10 border border-[#FFD700]/20 rounded-full text-[#FFD700] text-sm font-bold mb-6"><span class="w-2 h-2 bg-[#FFD700] rounded-full mr-2 animate-pulse"></span>Reality Check Alert</div><h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">AI Side Hustles Ka <span class="text-[#FFD700]">Sach</span> — No More <span class="text-[#00C2FF]">Fake Guru Gyaan</span></h1><p class="text-xl md:text-2xl text-gray-300 leading-relaxed">Jahan internet hype deta hai, yeh guide asli truth reveal karti hai. Start earning with AI—without lies, without confusion.</p><div class="flex flex-col sm:flex-row gap-4"><button class="bg-[#FFD700] text-[#0D0D0D] px-8 py-4 rounded-xl font-black text-lg hover:bg-[#FFD700]/90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#FFD700]/25 buyNowTrigger">Buy Now - ₹109</button></div><div class="flex items-center gap-6 pt-8"><div class="flex items-center gap-2"><div class="w-3 h-3 bg-[#00C2FF] rounded-full"></div><span class="text-sm font-bold">Instant Download</span></div><div class="flex items-center gap-2"><div class="w-3 h-3 bg-[#FFD700] rounded-full"></div><span class="text-sm font-bold">No BS Guarantee</span></div></div></div><div class="relative"><img data-ai="generate" data-slot="hero-main" data-prompt="Modern Indian young professional working on laptop with AI interface elements, holographic charts showing income growth, dark premium aesthetic with golden and blue accents" data-ar="4:3" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/hero/hero-main-fcaa32c4d2ea4b6c9c751883b6d2ce55.png" alt="AI Side Hustle Reality Guide" width="800" height="600" class="w-full rounded-2xl object-cover shadow-2xl" loading="lazy" decoding="async" fetchpriority="auto" /><div class="absolute -bottom-6 -right-6 bg-[#1A1A1A] border border-[#FFD700]/20 rounded-2xl p-6 shadow-2xl"><img data-ai="generate" data-slot="hero-product" data-prompt="Digital product mockup showing AI Side Hustle guide cover with modern design, golden and blue colors, professional layout" data-ar="3:2" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/hero/hero-product-1c813c979ba94a8e8d36e86eb8244837.png" alt="Product Mockup" width="300" height="200" class="w-32 h-20 rounded-lg object-cover" loading="lazy" decoding="async" fetchpriority="auto" /><div class="mt-3 text-center"><div class="text-[#FFD700] font-black text-lg">₹109</div><div class="text-xs text-gray-400">Instant Access</div></div></div></div></div></div></section>
+    <section id="features" class="py-20 bg-[#1A1A1A] text-white"><div class="container mx-auto px-4"><div class="grid lg:grid-cols-2 gap-16 items-center"><div class="space-y-8"><h2 class="text-4xl md:text-5xl font-black leading-tight">What You'll Get <span class="text-[#FFD700]">Inside</span></h2><div class="space-y-6"><div class="flex items-start gap-4 p-4 bg-[#0D0D0D]/50 rounded-xl border border-[#FFD700]/10 hover:border-[#FFD700]/30 transition-all duration-300"><div class="w-6 h-6 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-3 h-3 text-[#0D0D0D]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><div><h3 class="font-bold text-lg text-[#FFD700]">5 'Lazy' AI Side Hustles that actually work</h3><p class="text-gray-300 text-sm mt-1">No overnight millionaire promises</p></div></div><div class="flex items-start gap-4 p-4 bg-[#0D0D0D]/50 rounded-xl border border-[#00C2FF]/10 hover:border-[#00C2FF]/30 transition-all duration-300"><div class="w-6 h-6 bg-[#00C2FF] rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-3 h-3 text-[#0D0D0D]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><div><h3 class="font-bold text-lg text-[#00C2FF]">Beginner-friendly step-by-step breakdowns</h3><p class="text-gray-300 text-sm mt-1">Even your mom can follow these</p></div></div><div class="flex items-start gap-4 p-4 bg-[#0D0D0D]/50 rounded-xl border border-[#FFD700]/10 hover:border-[#FFD700]/30 transition-all duration-300"><div class="w-6 h-6 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-3 h-3 text-[#0D0D0D]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><div><h3 class="font-bold text-lg text-[#FFD700]">Tools, prompts, templates included</h3><p class="text-gray-300 text-sm mt-1">Copy-paste ready resources</p></div></div><div class="flex items-start gap-4 p-4 bg-[#0D0D0D]/50 rounded-xl border border-[#00C2FF]/10 hover:border-[#00C2FF]/30 transition-all duration-300"><div class="w-6 h-6 bg-[#00C2FF] rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-3 h-3 text-[#0D0D0D]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><div><h3 class="font-bold text-lg text-[#00C2FF]">Earn-from-phone workflows</h3><p class="text-gray-300 text-sm mt-1">Work from anywhere, anytime</p></div></div><div class="flex items-start gap-4 p-4 bg-[#0D0D0D]/50 rounded-xl border border-[#FFD700]/10 hover:border-[#FFD700]/30 transition-all duration-300"><div class="w-6 h-6 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-3 h-3 text-[#0D0D0D]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><div><h3 class="font-bold text-lg text-[#FFD700]">Automation hacks that save hours</h3><p class="text-gray-300 text-sm mt-1">Let AI do the heavy lifting</p></div></div><div class="flex items-start gap-4 p-4 bg-[#0D0D0D]/50 rounded-xl border border-[#00C2FF]/10 hover:border-[#00C2FF]/30 transition-all duration-300"><div class="w-6 h-6 bg-[#00C2FF] rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-3 h-3 text-[#0D0D0D]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><div><h3 class="font-bold text-lg text-[#00C2FF]">Real earning examples with proof</h3><p class="text-gray-300 text-sm mt-1">No fake screenshots here</p></div></div></div></div><div class="relative"><img data-ai="generate" data-slot="inside-preview" data-prompt="Digital guide preview showing multiple pages with AI side hustle strategies, step-by-step tutorials, tools and templates, modern dark interface with golden highlights" data-ar="4:3" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/inside/inside-preview-ccbbc66d61b24a8f82b0d31749312ad9.png" alt="Guide Preview" width="800" height="600" class="w-full rounded-2xl object-cover shadow-2xl" loading="lazy" decoding="async" fetchpriority="auto" /><div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-transparent to-transparent rounded-2xl"></div><div class="absolute bottom-6 left-6 right-6"><div class="bg-[#0D0D0D]/80 backdrop-blur-sm rounded-xl p-4 border border-[#FFD700]/20"><div class="text-[#FFD700] font-bold text-sm mb-1">Instant Access</div><div class="text-white font-black text-lg">Download & Start Today</div></div></div></div></div></div></section>
+    <section id="earning" class="py-20 bg-[#0D0D0D] text-white"><div class="container mx-auto px-4"><div class="text-center mb-16"><h2 class="text-4xl md:text-5xl font-black leading-tight mb-6">How Much Can You Earn With These <span class="text-[#FFD700]">AI Hustles?</span></h2><p class="text-xl text-gray-300 max-w-3xl mx-auto">Yeh hype nahi — real earning range hai. Slow start, phir growth automatic.</p></div><div class="grid lg:grid-cols-2 gap-12 items-center"><div class="space-y-6"><div class="bg-[#1A1A1A] rounded-2xl p-6 border border-[#FFD700]/10 hover:border-[#FFD700]/30 transition-all duration-300"><div class="flex justify-between items-center mb-3"><h3 class="font-bold text-lg text-[#FFD700]">AI Content Automation</h3><div class="text-[#00C2FF] font-black text-sm">BEGINNER FRIENDLY</div></div><div class="text-2xl font-black text-white mb-2">₹10,000 – ₹50,000 / month</div><div class="text-gray-400 text-sm">Social media posts, blogs, captions</div></div><div class="bg-[#1A1A1A] rounded-2xl p-6 border border-[#00C2FF]/10 hover:border-[#00C2FF]/30 transition-all duration-300"><div class="flex justify-between items-center mb-3"><h3 class="font-bold text-lg text-[#00C2FF]">AI WhatsApp Chatbot Services</h3><div class="text-[#FFD700] font-black text-sm">HIGH DEMAND</div></div><div class="text-2xl font-black text-white mb-2">₹15,000 – ₹60,000 / month</div><div class="text-gray-400 text-sm">Business automation, customer support</div></div><div class="bg-[#1A1A1A] rounded-2xl p-6 border border-[#FFD700]/10 hover:border-[#FFD700]/30 transition-all duration-300"><div class="flex justify-between items-center mb-3"><h3 class="font-bold text-lg text-[#FFD700]">AI UGC/Reels Creation</h3><div class="text-[#00C2FF] font-black text-sm">CREATIVE</div></div><div class="text-2xl font-black text-white mb-2">₹8,000 – ₹35,000 / month</div><div class="text-gray-400 text-sm">Video content, thumbnails, graphics</div></div><div class="bg-[#1A1A1A] rounded-2xl p-6 border border-[#00C2FF]/10 hover:border-[#00C2FF]/30 transition-all duration-300"><div class="flex justify-between items-center mb-3"><h3 class="font-bold text-lg text-[#00C2FF]">AI Mini Agency (Design + Tools)</h3><div class="text-[#FFD700] font-black text-sm">SCALABLE</div></div><div class="text-2xl font-black text-white mb-2">₹20,000 – ₹1,00,000+ / month</div><div class="text-gray-400 text-sm">Complete service packages</div></div><div class="bg-[#1A1A1A] rounded-2xl p-6 border border-[#FFD700]/10 hover:border-[#FFD700]/30 transition-all duration-300"><div class="flex justify-between items-center mb-3"><h3 class="font-bold text-lg text-[#FFD700]">AI Course/Info Products</h3><div class="text-[#00C2FF] font-black text-sm">PASSIVE INCOME</div></div><div class="text-2xl font-black text-white mb-2">₹5,000 – ₹2,00,000+ / month</div><div class="text-gray-400 text-sm">Digital products, online courses</div></div><div class="bg-gradient-to-r from-[#FFD700]/10 to-[#00C2FF]/10 rounded-2xl p-6 border border-[#FFD700]/20"><div class="text-center"><div class="text-[#FFD700] font-bold text-sm mb-2">REALITY CHECK</div><div class="text-white font-black text-lg">Earnings depend on consistency, niche, and execution — no fake 5 lakh per week claims.</div></div></div></div><div class="relative"><img data-ai="generate" data-slot="earning-chart" data-prompt="Professional earnings chart showing realistic AI side hustle income progression over time, dark theme with golden and blue data visualization elements, Indian rupee currency" data-ar="4:3" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/earning_potential/earning-chart-1e9997d835024974ac41e38d669bdaa9.png" alt="Earning Potential Chart" width="800" height="600" class="w-full rounded-2xl object-cover shadow-2xl" loading="lazy" decoding="async" fetchpriority="auto" /><div class="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-transparent to-transparent rounded-2xl"></div><div class="absolute bottom-6 left-6 right-6"><div class="bg-[#1A1A1A]/90 backdrop-blur-sm rounded-xl p-4 border border-[#00C2FF]/20"><div class="text-[#00C2FF] font-bold text-sm mb-1">Real Data</div><div class="text-white font-black text-lg">No Fake Promises</div></div></div></div></div></div></section>
+    <section class="py-16 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden"><div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,215,0,0.1),transparent_50%)] pointer-events-none"></div><div class="container mx-auto px-6 relative z-10"><div class="max-w-4xl mx-auto text-center"><h2 class="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">AI Side Hustle <span class="text-[#FFD700]">Reality Check</span></h2><div class="grid md:grid-cols-2 gap-12 items-center mt-12"><div class="space-y-6"><div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-2xl p-6 text-left"><div class="flex items-start space-x-4"><div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg></div><p class="text-white font-semibold">99% hype — sirf 1% sach</p></div></div><div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-2xl p-6 text-left"><div class="flex items-start space-x-4"><div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg></div><p class="text-white font-semibold">Most courses overpromise & undershow</p></div></div><div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-2xl p-6 text-left"><div class="flex items-start space-x-4"><div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg></div><p class="text-white font-semibold">People fail because they copy the wrong strategies</p></div></div><div class="bg-gradient-to-r from-[#00C2FF]/20 to-[#FFD700]/20 border border-[#00C2FF]/30 rounded-2xl p-6 text-left"><div class="flex items-start space-x-4"><div class="w-8 h-8 bg-[#00C2FF] rounded-full flex items-center justify-center flex-shrink-0 mt-1"><svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><p class="text-white font-semibold">This guide gives real-world practical paths</p></div></div></div><div class="flex justify-center"><img data-ai="generate" data-slot="reality-visual" data-prompt="Split screen comparison showing fake guru promises vs reality, with charts and graphs showing honest expectations, modern dark theme with neon accents" data-ar="4:3" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/reality_check/reality-visual-ce859faf78714df48838f683705e4174.png" alt="Reality vs Hype Comparison" width="800" height="600" class="w-full max-w-md rounded-2xl object-cover shadow-2xl" loading="lazy" decoding="async" fetchpriority="auto" /></div></div></div></div></section>
+    <section class="py-16 bg-gradient-to-b from-black to-gray-900"><div class="container mx-auto px-6"><div class="max-w-6xl mx-auto"><div class="text-center mb-12"><h2 class="text-4xl md:text-5xl font-black text-white mb-6">Why This Guide <span class="text-[#FFD700]">Actually Works</span></h2><p class="text-xl text-gray-300 max-w-2xl mx-auto">No BS, no fake promises — just proven methods that deliver real results</p></div><div class="grid md:grid-cols-3 gap-8"><div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700/50 rounded-2xl p-8 text-center hover:border-[#FFD700]/30 transition-all duration-300"><div class="mb-6"><img data-ai="generate" data-slot="benefits-1" data-prompt="Fast rocket launch icon with speed lines, representing quick earning potential, modern minimalist style with golden accents" data-ar="1:1" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/benefits/benefits-1-6e273b67d7334077aee421b91869cb57.png" alt="Start Earning Faster" width="400" height="400" class="w-20 h-20 mx-auto rounded-xl object-cover" loading="lazy" decoding="async" fetchpriority="auto" /></div><h3 class="text-2xl font-bold text-white mb-4">Start Earning Faster</h3><p class="text-gray-300 leading-relaxed">Skip the learning curve with ready-to-use templates and proven workflows that get you earning within days, not months.</p></div><div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700/50 rounded-2xl p-8 text-center hover:border-[#00C2FF]/30 transition-all duration-300"><div class="mb-6"><img data-ai="generate" data-slot="benefits-2" data-prompt="Shield protecting from fake gurus and scams, with warning symbols being blocked, cyberpunk aesthetic with blue neon" data-ar="1:1" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/benefits/benefits-2-9ad931dbdffa4f16958b9aecd3e46869.png" alt="Avoid Fake Guru Traps" width="400" height="400" class="w-20 h-20 mx-auto rounded-xl object-cover" loading="lazy" decoding="async" fetchpriority="auto" /></div><h3 class="text-2xl font-bold text-white mb-4">Avoid Fake Guru Traps</h3><p class="text-gray-300 leading-relaxed">Cut through the noise and hype. Get honest, tested strategies that actually work instead of empty promises.</p></div><div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700/50 rounded-2xl p-8 text-center hover:border-[#FFD700]/30 transition-all duration-300"><div class="mb-6"><img data-ai="generate" data-slot="benefits-3" data-prompt="AI robot doing 80% of work while human relaxes, automation concept with gears and circuits, futuristic golden theme" data-ar="1:1" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/benefits/benefits-3-a05a83ec457040a6911562d71a9fa04b.png" alt="AI Does 80% of Work" width="400" height="400" class="w-20 h-20 mx-auto rounded-xl object-cover" loading="lazy" decoding="async" fetchpriority="auto" /></div><h3 class="text-2xl font-bold text-white mb-4">AI Does 80% of Work</h3><p class="text-gray-300 leading-relaxed">Leverage automation to scale your income without burning out. Work smarter, not harder with AI-powered systems.</p></div></div><div class="grid md:grid-cols-2 gap-8 mt-8"><div class="bg-gradient-to-r from-[#FFD700]/10 to-[#00C2FF]/10 border border-[#FFD700]/20 rounded-2xl p-8"><div class="flex items-center space-x-4 mb-4"><div class="w-12 h-12 bg-[#FFD700] rounded-full flex items-center justify-center"><svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><h3 class="text-xl font-bold text-white">Only Proven Methods Included</h3></div><p class="text-gray-300">Every strategy has been tested and validated. No theoretical fluff — just what actually generates income.</p></div><div class="bg-gradient-to-r from-[#00C2FF]/10 to-[#FFD700]/10 border border-[#00C2FF]/20 rounded-2xl p-8"><div class="flex items-center space-x-4 mb-4"><div class="w-12 h-12 bg-[#00C2FF] rounded-full flex items-center justify-center"><svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><h3 class="text-xl font-bold text-white">Perfect for Beginners</h3></div><p class="text-gray-300">Step-by-step breakdowns make it easy for anyone to start, regardless of technical background or experience.</p></div></div></div></div></section>
+    <section class="py-16 bg-gradient-to-br from-gray-900 to-black relative"><div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(0,194,255,0.1),transparent_50%)] pointer-events-none"></div><div class="container mx-auto px-6 relative z-10"><div class="max-w-5xl mx-auto"><div class="text-center mb-12"><h2 class="text-4xl md:text-5xl font-black text-white mb-6">Who Is This <span class="text-[#00C2FF]">Perfect For?</span></h2><p class="text-xl text-gray-300 max-w-2xl mx-auto">If you see yourself in any of these, this guide is made for you</p></div><div class="grid md:grid-cols-2 gap-12 items-center"><div class="space-y-6"><div class="bg-gradient-to-r from-[#FFD700]/20 to-[#00C2FF]/20 border border-[#FFD700]/30 rounded-2xl p-6 hover:border-[#FFD700]/50 transition-all duration-300"><div class="flex items-start space-x-4"><div class="w-12 h-12 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0"><svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg></div><div><h3 class="text-xl font-bold text-white mb-2">Students Wanting Extra Income</h3><p class="text-gray-300">Perfect side hustle that fits around your studies and doesn't require huge time investment</p></div></div></div><div class="bg-gradient-to-r from-[#00C2FF]/20 to-[#FFD700]/20 border border-[#00C2FF]/30 rounded-2xl p-6 hover:border-[#00C2FF]/50 transition-all duration-300"><div class="flex items-start space-x-4"><div class="w-12 h-12 bg-[#00C2FF] rounded-full flex items-center justify-center flex-shrink-0"><svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg></div><div><h3 class="text-xl font-bold text-white mb-2">Freelancers Building New Revenue Streams</h3><p class="text-gray-300">Diversify your income with AI-powered services that complement your existing skills</p></div></div></div><div class="bg-gradient-to-r from-[#FFD700]/20 to-[#00C2FF]/20 border border-[#FFD700]/30 rounded-2xl p-6 hover:border-[#FFD700]/50 transition-all duration-300"><div class="flex items-start space-x-4"><div class="w-12 h-12 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0"><svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path></svg></div><div><h3 class="text-xl font-bold text-white mb-2">Creators Wanting AI Income Ideas</h3><p class="text-gray-300">Monetize your creativity with AI tools and automation that scale your content business</p></div></div></div><div class="bg-gradient-to-r from-[#00C2FF]/20 to-[#FFD700]/20 border border-[#00C2FF]/30 rounded-2xl p-6 hover:border-[#00C2FF]/50 transition-all duration-300"><div class="flex items-start space-x-4"><div class="w-12 h-12 bg-[#00C2FF] rounded-full flex items-center justify-center flex-shrink-0"><svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2h8a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 1a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg></div><div><h3 class="text-xl font-bold text-white mb-2">Absolute Beginners</h3><p class="text-gray-300">No experience? No problem. Start from zero with clear, actionable steps that anyone can follow</p></div></div></div></div><div class="flex justify-center"><img data-ai="generate" data-slot="audience-visual" data-prompt="Diverse group of young professionals, students, and creators working on laptops and phones, modern workspace with AI elements, representing the target audience for AI side hustles" data-ar="4:3" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/who_for/audience-visual-d6e9bd53e3434e9491017a472850a2da.png" alt="Target Audience for AI Side Hustles" width="800" height="600" class="w-full max-w-lg rounded-2xl object-cover shadow-2xl" loading="lazy" decoding="async" fetchpriority="auto" /></div></div></div></div></section>
+    <section id="pricing" class="py-20 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative overflow-hidden"><div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,215,0,0.1),transparent_50%)] pointer-events-none"></div><div class="container mx-auto px-6 relative z-10"><div class="max-w-4xl mx-auto text-center"><h2 class="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">Get Instant Access</h2><div class="grid lg:grid-cols-2 gap-12 items-center mt-16"><div class="order-2 lg:order-1"><img data-ai="generate" data-slot="pricing-visual" data-prompt="Modern digital product mockup showing AI side hustle guide on laptop and phone screens with golden accents and professional design" data-ar="4:3" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/pricing/pricing-visual-9d510a8ec3d34374ba7d9f906273f64e.png" alt="AI Side Hustle Guide Digital Product" width="800" height="600" class="w-full rounded-2xl object-cover shadow-sm" loading="lazy" decoding="async" fetchpriority="auto" /></div><div class="order-1 lg:order-2 text-left"><div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border border-gray-700 shadow-2xl"><div class="text-center mb-8"><div class="text-gray-400 text-lg line-through mb-2">₹249</div><div class="text-6xl font-black text-[#FFD700] mb-4">₹109</div><div class="text-[#00C2FF] font-bold text-xl">Limited Time Only</div></div><div class="space-y-4 mb-8"><h3 class="text-xl font-bold text-white mb-4">What You Get:</h3><div class="space-y-3"><div class="flex items-center gap-3"><div class="w-6 h-6 rounded-full bg-[#FFD700] flex items-center justify-center flex-shrink-0"><svg class="w-3 h-3 text-black" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><span class="text-gray-300">Full AI Side Hustle Guide</span></div><div class="flex items-center gap-3"><div class="w-6 h-6 rounded-full bg-[#FFD700] flex items-center justify-center flex-shrink-0"><svg class="w-3 h-3 text-black" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><span class="text-gray-300">Automation Tips</span></div><div class="flex items-center gap-3"><div class="w-6 h-6 rounded-full bg-[#FFD700] flex items-center justify-center flex-shrink-0"><svg class="w-3 h-3 text-black" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><span class="text-gray-300">Exclusive Tools & Templates</span></div><div class="flex items-center gap-3"><div class="w-6 h-6 rounded-full bg-[#FFD700] flex items-center justify-center flex-shrink-0"><svg class="w-3 h-3 text-black" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg></div><span class="text-gray-300">Lifetime Access</span></div></div></div><button class="w-full bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-black font-black text-xl py-4 px-8 rounded-2xl hover:shadow-2xl hover:shadow-[#FFD700]/25 transition-all duration-300 transform hover:scale-105 buyNowTrigger">Buy Now</button><div class="text-center mt-4 text-gray-400 text-sm">Instant digital delivery • 30-day money-back guarantee</div></div></div></div></div></div></section>
+    <section id="faq" class="py-20 bg-black relative"><div class="container mx-auto px-6"><div class="max-w-4xl mx-auto"><div class="text-center mb-16"><h2 class="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">Frequently Asked Questions</h2><p class="text-xl text-gray-400">Clear answers to help you make the right decision</p></div><div class="grid lg:grid-cols-2 gap-12 items-start"><div class="space-y-6"><div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 border border-gray-700"><h3 class="text-xl font-bold text-white mb-3">Do I need any skills?</h3><p class="text-gray-300">Nope! It's beginner-friendly.</p></div><div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 border border-gray-700"><h3 class="text-xl font-bold text-white mb-3">Can I start earning fast?</h3><p class="text-gray-300">Yes — with consistent effort and the right steps.</p></div><div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 border border-gray-700"><h3 class="text-xl font-bold text-white mb-3">Do I need paid tools?</h3><p class="text-gray-300">Optional. Free tools are provided.</p></div><div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-6 border border-gray-700"><h3 class="text-xl font-bold text-white mb-3">Is this a video or PDF?</h3><p class="text-gray-300">It's a digital product you can access instantly.</p></div></div><div class="lg:sticky lg:top-8"><img data-ai="generate" data-slot="faq-visual" data-prompt="Professional person working on laptop with AI interface elements, question marks and lightbulb icons floating around, modern dark theme with golden accents" data-ar="4:3" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/faq/faq-visual-27164de1ace744ac9558ab80968261ec.png" alt="FAQ Support Visual" width="800" height="600" class="w-full rounded-2xl object-cover shadow-sm" loading="lazy" decoding="async" fetchpriority="auto" /></div></div></div></div></section>
+    <section class="py-20 bg-gradient-to-br from-[#FFD700] via-[#FFA500] to-[#FF8C00] relative overflow-hidden"><div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(0,194,255,0.2),transparent_50%)] pointer-events-none"></div><div class="container mx-auto px-6 relative z-10"><div class="max-w-4xl mx-auto text-center"><div class="bg-black/10 backdrop-blur-sm rounded-3xl p-12 border border-white/20"><h2 class="text-4xl md:text-6xl font-black text-black mb-6 leading-tight">Ready to Start Your AI Side Hustle?</h2><p class="text-xl md:text-2xl text-black/80 mb-8 font-bold">Stop scrolling, start earning. Get the truth about AI side hustles that actually work.</p><div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8"><button class="bg-black text-[#FFD700] font-black text-xl py-4 px-12 rounded-2xl hover:bg-gray-900 transition-all duration-300 transform hover:scale-105 shadow-2xl buyNowTrigger">Buy Now - ₹109</button><div class="text-black font-bold">⚡ Instant Download • 30-Day Guarantee</div></div><img data-ai="generate" data-slot="cta-final" data-prompt="Excited young professional celebrating success with laptop showing AI earnings dashboard, money symbols and growth charts, vibrant and motivational" data-ar="16:9" src="https://cdn.ailandingpage.ai/ai-landingpage/user-generate/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/e997b3c5-06bf-4115-aa9d-e96792cb5fb0/cta/cta-final-17f78a7c6bc44de2960490bc846b59a2.png" alt="Success with AI Side Hustles" width="1200" height="675" class="w-full rounded-2xl object-cover shadow-sm mt-8" loading="lazy" decoding="async" fetchpriority="auto" /><div class="mt-8 text-black/70 text-sm">Join hundreds of others who've already started their AI earning journey</div></div></div></div></section>
+  </main>
+
+  <footer class="bg-dark-secondary border-t border-gray-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="col-span-1 md:col-span-2">
+          <div class="text-xl font-bold text-accent-gold mb-4">
+            S_DRIVAN
+          </div>
+          <p class="text-gray-400 mb-4">
+            The honest truth about AI side hustles. No fake promises, just real strategies that work.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-accent-blue transition-colors">
+              <i data-lucide="twitter" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-accent-blue transition-colors">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-accent-blue transition-colors">
+              <i data-lucide="youtube" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Product</h3>
+          <ul class="space-y-2">
+            <li><a href="#features" class="text-gray-400 hover:text-accent-blue transition-colors">Features</a></li>
+            <li><a href="#pricing" class="text-gray-400 hover:text-accent-blue transition-colors">Pricing</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-accent-blue transition-colors">Reviews</a></li>
+            <li><a href="#faq" class="text-gray-400 hover:text-accent-blue transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-4">Support</h3>
+          <ul class="space-y-2">
+            <li><a href="mailto:your-trusttaj07@gmail.com" class="text-gray-400 hover:text-accent-blue transition-colors">Contact</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-accent-blue transition-colors">Refund Policy</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-accent-blue transition-colors">Terms</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-accent-blue transition-colors">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          © 2024 S_DRIVAN. All rights reserved.
+        </p>
+        <p class="text-gray-400 text-sm mt-4 md:mt-0">
+          Contact: your-trusttaj07@gmail.com
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Reusable popup for callbacks
+    function showPopup(message, type = 'info') {
+      const popup = document.createElement('div');
+      popup.className = `fixed top-4 right-4 p-4 rounded-lg shadow-lg z-50 ${
+        type === 'success' ? 'bg-green-500' : type === 'error' ? 'bg-red-500' : 'bg-gray-800'
+      } text-white`;
+      popup.innerHTML = message;
+      document.body.appendChild(popup);
+      setTimeout(() => popup.remove(), 5000);
+    }
+
+    // Buy Now popup functionality
+    const buyNowBtn = document.getElementById('buyNowBtn');
+    const buyNowPopup = document.getElementById('buyNowPopup');
+    const closePopup = document.getElementById('closePopup');
+    const buyNowTriggers = document.querySelectorAll('.buyNowTrigger');
+    const completePurchase = document.getElementById('completePurchase');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+
+    // Show popup when any Buy Now button is clicked
+    buyNowTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        buyNowPopup.classList.remove('hidden');
+        buyNowPopup.classList.add('flex');
+      });
+    });
+
+    if (buyNowBtn) {
+      buyNowBtn.addEventListener('click', () => {
+        buyNowPopup.classList.remove('hidden');
+        buyNowPopup.classList.add('flex');
+      });
+    }
+
+    // Close popup
+    if (closePopup) {
+      closePopup.addEventListener('click', () => {
+        buyNowPopup.classList.add('hidden');
+        buyNowPopup.classList.remove('flex');
+      });
+    }
+
+    // Close popup when clicking outside
+    if (buyNowPopup) {
+      buyNowPopup.addEventListener('click', (e) => {
+        if (e.target === buyNowPopup) {
+          buyNowPopup.classList.add('hidden');
+          buyNowPopup.classList.remove('flex');
+        }
+      });
+    }
+
+    // Complete purchase button: redirect to payment gateway with loading state
+    if (completePurchase) {
+      completePurchase.addEventListener('click', (e) => {
+        const btn = e.currentTarget;
+        btn.disabled = true;
+        const prevHTML = btn.innerHTML;
+        btn.innerHTML = 'Processing...';
+
+        // small timeout to allow UI to update before navigation
+        setTimeout(() => {
+          try {
+            // Redirect to your Razorpay payment link
+            window.location.href = 'https://rzp.io/rzp/aImMNJV';
+          } catch (error) {
+            showPopup('Your payment page server IP address could not be found. Please contact vinzalex.systeme.io', 'error');
+            // Reset button
+            btn.disabled = false;
+            btn.innerHTML = prevHTML;
+          }
+        }, 150);
+      });
+    }
+
+    // Mobile menu toggle
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        alert('Mobile menu functionality would be implemented here');
+      });
+    }
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Handle return from payment page (if applicable)
+    const urlParams = new URLSearchParams(window.location.search);
+    const paymentStatus = urlParams.get('payment') || urlParams.get('payment_status') || urlParams.get('status');
+    if (paymentStatus === 'success' || paymentStatus === 'ok' || paymentStatus === 'approved') {
+      showPopup('Payment Successful! 🎉 Your order has been confirmed.', 'success');
+    } else if (paymentStatus === 'failed' || paymentStatus === 'error') {
+      showPopup('Payment Failed ❌ Please try again.', 'error');
+    }
+
+    // Footer contact link
+    const mailLink = document.querySelector('a[href="mailto:your-trusttaj07@gmail.com"]');
+    if (mailLink) {
+      mailLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'mailto:your-trusttaj07@gmail.com';
+      });
+    }
+  </script>
+    <script>
+      // IMPORTANT: waits for page to load, initializes icons and toggles mobile menu
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+          try { window.lucide.createIcons(); } catch (e) { /* ignore */ }
+        }
+
+        // support both id naming conventions
+        const menuBtn = document.getElementById('mobile-menu-btn') || document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobile-menu') || document.getElementById('mobileMenu');
+
+        if (menuBtn && mobileMenu) {
+          menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+          });
+        }
+      });
+    </script>
+</body>
+</html>
